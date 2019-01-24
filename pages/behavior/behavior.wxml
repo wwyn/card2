@@ -1,0 +1,8 @@
+<!--pages/behavior/behavior.wxml-->
+<view class="radar">
+  <view wx:if="{{timeList.length>0}}" class="timeList" wx:for="{{ timeList }}" wx:for-item="item" wx:key="index">
+    <view class="time">{{item.time}}</view>
+    <view><text>{{item.name}}</text>{{item.content}}</view>
+  </view>
+  <view wx:if="{{timeList.length<1}}" class="data">没有数据</view>
+</view>

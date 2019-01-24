@@ -1,0 +1,18 @@
+<!--pages/cards/cards.wxml-->
+<view class="cards">
+  <view class="pad">
+    <view>名片组名称</view>
+    <view class="text">名片组的描述</view>
+  </view>
+   <view class="myCard" wx:for="{{ messageCard }}" wx:for-item="item" wx:key="index">
+      <view class="myCard-title">{{item.type}}</view>
+      <view catchtap='go_card' class="message-ard flex" wx:for="{{ item.children }}" wx:for-item="item" wx:key="index">
+        <image src="http://wx3.sinaimg.cn/large/006qBWBXly1fcgwhjfbjtj30ci08a0ux.jpg"></image>
+        <view>
+          <view>{{item.name}}</view>
+          <view class="text">{{item.job}}</view>
+          <view class="phone" catchtap='makingCall' data-number="{{item.phone}}">{{item.phone}}</view>
+        </view>
+      </view>
+  </view>
+</view>

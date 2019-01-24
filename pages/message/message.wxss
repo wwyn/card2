@@ -1,0 +1,122 @@
+/* pages/message/message.wxss */
+.active{
+  color:rgb(11, 95, 252);
+  border-bottom: 2px solid rgb(11, 95, 252);
+}
+.message {
+  font-size: 28rpx;
+  height: 100vh;
+}
+.messageTab {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.messageTab view{
+  width: 30%;
+  text-align: center;
+  padding-bottom: 20rpx;
+} 
+.messageList {
+  font-size: 32rpx;
+  
+}
+.messagebox {
+border-bottom: 1px solid #ccc;
+}
+.messagebox > view{
+  padding: 20rpx 0;
+  flex:1;
+}
+.messageList image {
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.content {
+  margin-bottom: 30rpx;
+}
+.text {
+  color:#ccc;
+  font-size: 28rpx;
+  text-align: left;
+}
+.data {
+  margin-top: 40rpx;
+}
+.search {
+  border: 1px solid #ccc;
+  border-radius: 20rpx;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+} 
+.search image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.search input {
+  text-align: left;
+  flex: 1;
+}
+.search view {
+  background-color: #ccc;
+  font-size: 28rpx;
+  width: 40rpx;
+  height: 40rpx;
+  color:#fff;
+  border-radius: 100%;
+  text-align: center;
+}
+.myCards {
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  border: 1px solid #ccc;
+  margin: 20rpx 0;
+}
+.myCards image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.myCards .myCards-text {
+  flex:1;
+  text-align: left;
+}
+.message-ard image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.message-ard>view {
+  flex: 1;
+}
+.message-ard {
+  padding: 20rpx;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+.myCard-title {
+  margin-bottom: 10rpx;
+}
+.card-grouping-none {
+  text-align: center;
+}
+.card-grouping-none view:nth-child(1) {
+  margin-top: 100rpx;
+  margin-bottom: 50rpx;
+  color: #ccc;
+  font-size: 32rpx;
+}
+.card-grouping-none view:nth-child(2) {
+  width: 200rpx;
+  padding: 20rpx 40rpx;
+  border: 1px solid rgb(11, 95, 252);
+  color: rgb(11, 95, 252);
+  font-size: 32rpx;
+  border-radius: 20rpx;
+  margin: auto;
+}

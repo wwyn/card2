@@ -1,0 +1,14 @@
+/**app.wxss**/
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.image {
+  vertical-align: middle;
+}
+.pad {
+  padding: 20rpx;
+  box-sizing: border-box;
+}

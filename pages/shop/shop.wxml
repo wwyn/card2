@@ -1,0 +1,27 @@
+<!--pages/shop/shop.wxml-->
+<view class="shop pad">
+ <view class="shop-image">
+  <image src="http://wx3.sinaimg.cn/large/006qBWBXly1fcgwhjfbjtj30ci08a0ux.jpg"></image>
+ </view>
+ <view class="shop-btn flex">
+  <view bindtap='editorShop'>编辑商城资料</view>
+  <view>发布商品</view>
+ </view>
+ <view class="shop-detail flex">
+  <text>商品</text>
+  <text>></text>
+ </view>
+ <view class="shop-tab flex">
+  <view wx:for="{{shopTab}}" wx:key="index">
+    <text>{{item.num}}</text>
+    <text>{{item.name}}</text>
+  </view>
+ </view>
+ <view bindtap='go_detail' class="shopList flex" wx:for="{{shopList}}" wx:key="index" data-type="{{item.type}}">
+    <view class="flex">
+      <image src="/statics/image/tabbar/we.png"></image>
+      <view>{{item.name}}</view>
+    </view>
+    <view>></view>
+ </view>
+</view>

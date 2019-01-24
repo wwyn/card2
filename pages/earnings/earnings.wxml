@@ -1,0 +1,26 @@
+<!--pages/earnings/earnings.wxml-->
+<view class="earnings pad">
+  <view class="earnings-money pad">
+    <view class="earnings-all-money pad">交易累积金额￥800</view>
+    <view class="earnings-one-money flex pad">
+      <view>
+        <text>￥500</text>
+        <text>已入账</text>
+      </view>
+      <view>
+        <text>￥300</text>
+        <text>入账中</text>
+      </view>
+    </view>
+  </view>
+  <view class="padding flex">
+    <view>从2019-01-01至2019-01-01</view>
+    <view class="screen">筛选</view>
+  </view>
+  <view class="enter-time padding">20181201 10:01 <text>已入账</text></view>
+  <view>订单编号:11111111111111</view>
+  <view class="flex">
+    <view>入账金额</view>
+    <view>￥32.00</view>
+  </view>
+</view>

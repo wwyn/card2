@@ -1,0 +1,15 @@
+<!--pages/template/template.wxml-->
+<view>
+<radio-group bindchange="checkboxChange" class="flex">
+    <label class="checkbox" wx:for="{{items}}" wx:key="{{ name }}" wx:for-item="item">
+      <view class="{{item.checked ? 'checked' : ''}} template-card">
+        <image src="http://wx3.sinaimg.cn/large/006qBWBXly1fcgwhjfbjtj30ci08a0ux.jpg"></image>
+        <view>{{item.name}}</view>
+        <view>{{item.value}}</view>
+        <view>{{item.phone}}</view>
+      </view>
+      <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+      <view class="{{item.checked ? 'checked' : ''}} checke-type">{{item.type}}</view>
+    </label>
+  </radio-group>
+</view>

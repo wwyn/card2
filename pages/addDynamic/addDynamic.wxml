@@ -1,0 +1,22 @@
+<!--pages/addDynamic/addDynamic.wxml-->
+<view>
+  <view class="addDynamic-tab flex">
+    <view><image src="/statics/image/tabbar/activity.png"></image></view>
+    <view><image src="/statics/image/tabbar/activity.png"></image></view>
+    <view><image src="/statics/image/tabbar/activity.png"></image></view>
+  </view>
+  <view class="addDynamic-btn" bindtap='addDynamic'>
+    <image src="/statics/image/tabbar/cat.png"></image>
+  </view>
+  <view class="section">
+    <input placeholder='标题'></input>
+  </view>
+  <view class="section">
+    <textarea placeholder='描述'></textarea>
+  </view>
+  <view class="location flex pad">
+    <view><image src="/statics/image/tabbar/cat.png"></image>所在位置</view>
+    <text>></text>
+  </view>
+  <button class="affirm">确认发布</button>
+</view>

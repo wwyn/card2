@@ -1,0 +1,47 @@
+/* pages/template/template.wxss */
+.template-card {
+  margin-right: 0  5rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  text-align: center;
+}
+.template-card image {
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 20rpx;
+}
+.template-card view:nth-child(3) {
+  font-size: 28rpx;
+  margin: 10rpx 0;
+}
+.template-card view:nth-child(4) {
+  font-size: 28rpx;
+  color:rgb(11, 95, 252);
+}
+
+.checked {
+  border: 1px solid rgb(11, 95, 252);
+}
+radio-group {
+  width: 100%;
+}
+label {
+  width: 50%;
+  font-size: 30rpx;
+  text-align: center;
+}
+.checke-type {
+  border: 1px solid #ccc;
+  border-radius: 20rpx;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+  width: 74%;
+  margin: auto;
+}
+checkbox {
+  opacity: 0;
+}
+.checke-type.checked {
+  border: 1px solid rgb(11, 95, 252);
+}

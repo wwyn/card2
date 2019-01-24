@@ -1,0 +1,36 @@
+/* pages/earnings/earnings.wxss */
+.earnings {
+  font-size: 30rpx;
+}
+.earnings-money {
+  background-color: rgb(71, 71, 71);
+  color:#fff;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.earnings-all-money {
+  border-bottom: 1px solid #fff;
+}
+.earnings-one-money>view{
+  width: 49%;
+}
+.earnings-one-money>view:nth-child(1){
+  border-right: 1px solid #fff;
+}
+.padding {
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+.screen {
+  border: 1px solid #ccc;
+  padding: 6rpx 20rpx;
+  border-radius: 10rpx;
+}
+.enter-time text {
+  border: 1px solid #ccc;
+  color: rgb(3, 148, 75);
+  border-radius: 10rpx;
+  padding: 0 10rpx;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+}

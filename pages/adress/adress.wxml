@@ -1,0 +1,46 @@
+<!--pages/adress/adress.wxml-->
+<view wx:if="{{addAdress}}" >
+  <view class="addressList" wx:for="{{addressList}}" wx:for-item="item" wx:key="key">
+    <view class="userInfo flex">
+      <view>收货人：{{item.name}}</view>
+      <view>{{item.phone}}</view>
+    </view>
+    <view>收货地址：{{item.region}}{{item.adress}}</view>
+    <view class="bt flex pad">
+      <view>
+         <checkbox-group>
+          <label>
+            <checkbox value="checkbox1" />
+            默认地址
+          </label>
+        </checkbox-group>
+      </view>
+      <view class="operation flex">
+        <view> <image src="/statics/image/tabbar/skin.png"></image> 编辑</view>
+        <view bindtap='delAdress' data-index="{{index}}"> <image src="/statics/image/tabbar/skin.png"></image>删除</view>
+      </view>
+    </view>
+  </view>
+  <view class="adress" bindtap='addAdress'>添加收货地址</view>
+</view>
+<view wx:if="{{!addAdress}}" class="addAdress">
+  <form bindsubmit="formSubmit">
+   <view class="section">
+      <input name="name" placeholder="收货人" />
+    </view>
+     <view class="section">
+        <input name="phone" placeholder="手机号码" />
+      </view>
+     <view class="section">
+        <input name="region" placeholder="所在地区" />
+      </view>
+     <view class="section">
+        <input name="adress" placeholder="详情地址" />
+      </view>
+    <view class="flex">
+      <view class="section__title">设置为默认地址</view>
+      <switch name="switch" />
+    </view>
+    <button class="saveAdress" form-type="submit">保存收货地址</button>
+  </form>
+</view>

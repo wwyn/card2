@@ -1,0 +1,62 @@
+<!--pages/radar/radar.wxml-->
+<view class="radar">
+  <view class="radarTab">
+    <view bindtap='toggleTab' class="{{ current==index?'active':''}}" data-cur="{{index}}" wx:for="{{ radarTab }}" wx:for-item="item" wx:key="index">
+      {{item}}
+    </view>
+  </view>
+  <view wx:if="{{current==0}}">
+    <view wx:if="{{timeList.length>0}}" class="timeList" wx:for="{{ timeList }}" wx:for-item="item" wx:key="index">
+      <view class="time">{{item.time}}</view>
+      <view><text>{{item.name}}</text>{{item.content}}</view>
+    </view>
+    <view wx:if="{{timeList.length<1}}" class="data">没有数据</view>
+  </view>
+  <view class="pad" wx:if="{{current==1}}">
+    <view bindtap='lookData' class="day flex">
+      <view>近七天被查看的行为统计</view>
+      <image class="calendar" src="/statics/image/tabbar/camera.png"></image>
+    </view>
+    <view class="flex behavior-box">
+      <view bindtap='go_behavior' class="behaviorList" wx:for="{{ behaviorList }}" wx:for-item="item" wx:key="index">
+        <view>{{item.content}}</view>
+        <view>{{item.num}}次</view>
+      </view>
+    </view>
+    <view bindtap='go_behavior' class="dynamicList flex" wx:for="{{ dynamicList }}" wx:for-item="item" wx:key="index">
+      <view class="flex">
+        <image class="calendar" src="/statics/image/tabbar/camera.png"></image>
+        <view>{{item.content}}</view>
+      </view>
+      <view>{{item.num}}次</view>
+    </view>
+  </view>
+  <view wx:if="{{showData}}" class="data-time">
+    <view class="data-box">
+      <view class="btn flex">
+        <view bindtap='cancel'>取消</view>
+        <view bindtap='affirm'>确认</view>
+      </view>
+    <view class="pad flex">
+      <view class="section">
+        <picker
+          mode="date"
+          value="{{dateStart}}"
+          bindchange="bindDateChangeStart"
+        >
+          <view class="picker">开始: {{dateStart}}</view>
+        </picker>
+      </view>
+       <view class="section">
+          <picker
+            mode="date"
+            value="{{dateEnd}}"
+            bindchange="bindDateChangeEnd"
+          >
+            <view class="picker">结束: {{dateEnd}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+
+<view wx:if="{{carts.length < 1}}">
+  <view class="cart-title">这里什么都没有</view>
+  <view class='choose' bindtap='goCart'>去收藏</view>
+</view>
+<view class="carts" wx:if="{{carts.length > 0}}">
+    <scroll-view scroll-y style="height:100%">
+        <view bindtap='goCard' wx:for="{{carts}}" wx:key="key" data-index="{{index}}" class="{{item.margin_left?'margin_left':''}} carts-list" bindtouchstart="evt_tcoitem_start" bindtouchmove="evt_tcoitem_move" bindtouchend="evt_tcoitem_end">
+            <view class="carts-head">
+                <view class="carts-name">
+                    <image class="" src="{{item.pic}}"></image>
+                    <view class="carts-text">
+                        <view>{{item.name}}</view>
+                        <view class="carts-money">￥{{item.price}}</view>
+                    </view>
+                </view>
+            </view>
+           <view data-index="{{index}}" class="del-cart" bindtap="delCart">删除</view>
+        </view>
+    </scroll-view>
+</view>

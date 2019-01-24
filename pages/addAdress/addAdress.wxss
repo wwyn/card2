@@ -1,0 +1,21 @@
+/* pages/addAdress/addAdress.wxss */
+.addAdress {
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.section {
+  font-size: 30rpx;
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx 0;
+} 
+.saveAdress {
+  text-align: center;
+  padding: 20rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background-color: rgba(87, 145, 253,.7);
+  font-size: 32rpx;
+}

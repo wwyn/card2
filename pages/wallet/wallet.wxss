@@ -1,0 +1,52 @@
+/* pages/wallet/wallet.wxss */
+.money {
+  background-color: #ccc;
+  color: #fff;
+  font-size: 60rpx;
+  text-align: center;
+  padding: 100rpx 0;
+  box-sizing: border-box;
+}
+.money view:nth-child(2) {
+  font-size: 30rpx;
+}
+.active{
+  color:rgb(11, 95, 252);
+  border-bottom: 2px solid rgb(11, 95, 252);
+}
+.money-tab {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0;
+}
+.money-tab view{
+  width: 30%;
+  text-align: center;
+  padding-bottom: 10rpx;
+}
+.text {
+  color: #ccc;
+  font-size: 28rpx;
+}
+.detail {
+  font-size: 28rpx;
+  border-bottom: 1px solid #ccc;
+}
+.money-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+.money-btn view {
+  width: 50%;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.money-btn view:nth-child(1) {
+  border-right: 1pd solid #ccc;
+}
+.money-btn view:nth-child(2) {
+  background-color: red;
+  color: #fff;
+}

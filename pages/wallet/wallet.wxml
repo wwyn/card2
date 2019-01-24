@@ -1,0 +1,23 @@
+<!--pages/wallet/wallet.wxml-->
+<view>
+  <view class="money">
+    <view>10000</view>
+    <view>当前余额</view>
+  </view>
+  <view class="money-tab flex pad">
+     <view bindtap='toggleTab' class="{{ current==index?'active':''}}" data-cur="{{index}}" wx:for="{{ radarTab }}" wx:for-item="item" wx:key="index">
+      {{item}}
+    </view>
+  </view>
+   <view wx:for="{{ detailList }}" wx:for-item="item" wx:key="index" class="detail flex pad">
+      <view>
+        <view>{{item.name}}</view>
+        <view class="text">{{item.time}}</view>
+      </view>
+      <view>{{item.money}}</view>
+    </view>
+    <view class="money-btn flex">
+      <view data-type="extract" bindtap='extractMoney'>体现</view>
+      <view data-type="recharge" bindtap='extractMoney'>充值</view>
+    </view>
+</view>

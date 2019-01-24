@@ -1,0 +1,22 @@
+<!--pages/addAdress/addAdress.wxml-->
+<view class="addAdress">
+  <form bindsubmit="formSubmit">
+   <view class="section">
+      <input name="name" placeholder="收货人" />
+    </view>
+     <view class="section">
+        <input name="phone" placeholder="手机号码" />
+      </view>
+     <view class="section">
+        <input name=" region" placeholder="所在地区" />
+      </view>
+     <view class="section">
+        <input name="adress" placeholder="详情地址" />
+      </view>
+    <view class="section section_gap">
+      <view class="section__title">设置为默认地址</view>
+      <switch name="switch" />
+    </view>
+    <button class="saveAdress" form-type="submit">保存收货地址</button>
+  </form>
+</view>

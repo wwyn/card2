@@ -1,0 +1,42 @@
+<!--pages/orderForm/orderForm.wxml-->
+<view>
+  <view class="orderList">
+    <view bindtap='orderClick' class="{{current==index?'active':''}}" data-cur="{{index}}" wx:for="{{orderList}}" wx:key="index">{{item}}</view>
+  </view>
+  <view class="code flex pad">
+    <view>11111111111</view>
+    <view class="state">未支付</view>
+  </view>
+  <view bindtap='shopDetails' class="shop flex pad"  wx:for="{{shopList}}" wx:key="index">
+    <image src="http://wx3.sinaimg.cn/large/006qBWBXly1fcgwhjfbjtj30ci08a0ux.jpg"></image>
+    <view>
+      <view>{{item.name}}</view>
+      <view class="money">{{item.money}}X{{item.num}}</view>
+    </view>
+  </view>
+  <view class="total pad bb">小计：<text class="state">1222</text></view>
+  <view class="cancel pad bb" bindtap='cancelOrder'>取消订单</view>
+  <view class="cancel pad bb" bindtap='logistics'>查看物流</view>
+</view>
+<view wx:if="{{showLogistics}}" class="logistics-model">
+  <view>
+    <view class="flex">
+      <view class="logistics-tilte pad">物流追踪记录</view>
+      <view bindtap='hiddenLogistics'>x</view>
+    </view>
+    <view class='logisit' wx:for="{{list}}" wx:key="key">
+      <!-- 列表 -->
+      <view class='list'>
+        <view class='list_name_page'>
+          <!-- 列表名称 -->
+          <lable class='list_name'>{{item.name}}</lable>
+        </view>
+        <!-- 时间 -->
+        <view class='list_dates_page'>{{item.dates}}</view>
+      </view>
+      <!-- 列表底线 -->
+      <view class='writes'></view>
+    </view>
+  </view>
+</view>
+

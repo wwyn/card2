@@ -1,0 +1,209 @@
+/**index.wxss**/
+page {
+  background-color: rgb(238, 237, 237);
+}
+.editor-card {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(11, 95, 252);
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  margin: 80rpx 20rpx 0;
+  font-size: 30rpx;
+}
+.section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+.section input {
+  font-size: 28rpx;
+  margin-top: 4rpx;
+}
+.section image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 30rpx;
+}
+.section__title {
+  font-size: 30rpx;
+  margin-right: 30rpx;
+}
+.introduce {
+  border: 1px dashed #ccc;
+}
+textarea {
+  font-size: 28rpx;
+  width: 100%;
+  height: auto;
+}
+image {
+  width: 100%;
+  vertical-align: middle;
+}
+.my-message {
+  margin: 0 30rpx;
+}
+.my-image {
+  background-color: rgba(11, 95, 252,0.5);
+  border-radius: 10rpx;
+  padding: 100rpx 20rpx 40rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  margin-top: 20rpx;
+}
+.my-image image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 20rpx;
+}
+
+.userinfo {
+ padding: 40rpx;
+ box-sizing: border-box;
+ position: relative;
+ background-color: rgb(11, 95, 252);
+}
+.cards {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 0 0 30rpx 0;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  background-color: #fff;
+    border-radius: 20rpx;
+}
+
+.userinfo-avatar {
+  width: 100%;
+  height: 600rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.userinfo-nickname {
+  display: block;
+  color: #aaa;
+  margin: 40rpx;
+}
+.open {
+  background-color: #fff;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.title {
+  padding: 20rpx 0;
+  box-sizing: border-box;
+ color:rgb(11, 95, 252);
+ font-size: 28rpx;
+ text-align: left;
+ margin-top: 20rpx;
+}
+.title text {
+  color: #000;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+.userInfo {
+  box-shadow: 0 0 10rpx 0 rgb(11, 95, 252);
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+  text-align: center;
+  width: 98%;
+  font-size: 26rpx;
+  margin:20rpx auto;
+}
+
+
+.share button{
+  width: 100%;
+  background-color: rgb(11, 95, 252);
+  color: #fff;
+  margin-top: 30rpx;
+}
+.heaList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.heaList image {
+  width: 75rpx;
+  height: 75rpx;
+  margin: 20rpx 15rpx 0 0;
+  border-radius: 10rpx;
+}
+.text {
+  color:#000;
+  margin-top: 10rpx;
+}
+.delImage {
+  background-color: #ccc;
+  color: #fff;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 32rpx;
+  font-size: 60rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.myImageList {
+  position: relative;
+}
+.myImage {
+  width: 100%;
+  height: 200rpx;
+}
+
+.addtitle {
+  border: 1px solid #ccc;
+  border-radius: 14rpx;
+  padding: 4rpx 20rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  margin-right: 20rpx;
+}
+.section_gap label {
+  border: 1px solid #ccc;
+  border-radius: 14rpx;
+  padding: 4rpx 20rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  margin-right: 20rpx;
+}
+.section_gap .active {
+  border: 1px solid rgb(67, 182, 73);
+  color: rgb(67, 182, 73);
+}
+
+.section_gap label checkbox {
+  opacity: 0;
+  margin-bottom: 20rpx;
+  margin-left: -50rpx;
+}
+.calendar {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.recording {
+  border: 1px solid #ccc;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+} 
+

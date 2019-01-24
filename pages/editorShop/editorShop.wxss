@@ -1,0 +1,47 @@
+/* pages/editorShop/editorShop.wxss */
+.editor-image image {
+  width: 100%;
+}
+.editor-image {
+  padding: 20rpx 40rpx;
+  box-sizing: border-box;
+}
+.editor-image view {
+  text-align: center;
+}
+.editor-shop {
+  font-size: 30rpx;
+}
+.editor-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.section image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.section input {
+  flex: 1;
+  margin-left: 20rpx;
+}
+.section textarea {
+  flex: 1;
+  margin-left: 20rpx;
+}
+.editor-save {
+  background-color: rgb(11, 95, 252);
+  color: #fff;
+  text-align: center;
+  margin-top: 60rpx;
+}

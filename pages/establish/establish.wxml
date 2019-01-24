@@ -1,0 +1,31 @@
+<!--pages/establish/establish.wxml-->
+<view wx:if="{{!establishCard}}">
+  <form bindsubmit="formSubmit">
+    <view class="section pad">
+      <view class="section__title">名称</view>
+      <input name="name" placeholder="名片组名称" />
+    </view>
+    <view class="section pad">
+      <view class="section__title">描述</view>
+       <textarea name="introduce" maxlength="200" auto-height placeholder="分组的简单描述" />
+    </view>
+    <view class="addText pad">
+      <text>+</text>添加描述
+    </view>
+    <button class="establish-btn" form-type="submit">创建名片组</button>
+  </form>
+</view>
+<view wx:if="{{establishCard}}">
+  <view class="cardsList pad" bindtap='go_namecard' data-id="{{index}}" wx:for="{{cardsList}}" wx:key="index" wx:for-item="item">
+    <view class="cards">
+      <view>{{item.name}}</view>
+      <view>{{item.introduce}}</view>
+    </view>
+    <view>
+      <view wx:for="{{cardsImage}}" wx:key="index" wx:for-item="item">
+        <image src="{{item.url}}"></image>
+      </view>
+    </view>
+  </view>
+  <button class="establish-btn" bindtap='editorCard'>创建名片组</button>
+</view>

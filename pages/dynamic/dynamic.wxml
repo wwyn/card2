@@ -1,0 +1,40 @@
+<!--pages/dynamic/dynamic.wxml-->
+<view class="dynamic pad">
+  <view wx:for="{{dynamicList}}" wx:key="{{index}}">
+    <view class="flex">
+      <view class="dynamic-title">{{item.title}}</view>
+      <view>详情></view>
+    </view>
+    <view>{{item.content}}</view>
+    <view class="location">
+      <image src="/statics/image/tabbar/location.png"></image><text>{{item.adress}}</text>
+    </view>
+    <view class="dynamicImage">
+      <image wx:for="{{dynamicImage}}" wx:key="{{index}}" src="{{item}}"></image>
+    </view>
+    <view class="flex">
+      <view class="icon">
+        <image src="/statics/image/tabbar/favor.png"></image><text>20</text>
+        <image bindtap='commentDynamic' src="/statics/image/tabbar/skin.png"></image>
+        <image src="/statics/image/tabbar/cat.png"></image>
+        <image bindtap='delDynamic' data-index="{{index}}" src="/statics/image/tabbar/we.png"></image>
+      </view>
+      <button open-type='share' class="icon"><image src="/statics/image/tabbar/we.png"></image>转发</button>
+    </view>
+    <view wx:if="{{commentList.length}}" class="commentList flex" wx:for="{{commentList}}" wx:key="index">
+      <image class="commentImage" src="http://wx3.sinaimg.cn/large/006qBWBXly1fcgwhjfbjtj30ci08a0ux.jpg"></image>
+      <view class="commentContent">
+        <view>{{item.name}}</view>
+        <view>{{item.content}}</view>
+      </view>
+      <image class="commentIcon"  src="/statics/image/tabbar/favor.png"></image>
+    </view>
+  </view>
+</view>
+<view bindtap='addDynamic' class="addDynamic">
+  <view>+</view>
+</view>
+<view wx:if="{{showInput}}" class="commentinput flex">
+  <input auto-focus placeholder='输入框' bindconfirm="inputVal" value="{{inputVal}}" bindblur='onBlur'></input>
+  <view class="send" bindtap='send'>发送</view>
+</view>

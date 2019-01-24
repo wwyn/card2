@@ -1,0 +1,104 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.3",
+	"appid": "wx09b406638b3946c1",
+	"projectname": "cards_2",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 9,
+			"list": [
+				{
+					"id": -1,
+					"name": "雷达",
+					"pathName": "pages/radar/radar",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "消息",
+					"pathName": "pages/message/message",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "创建名片组",
+					"pathName": "pages/establish/establish",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提现",
+					"pathName": "pages/extract/extract",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加收货地址",
+					"pathName": "pages/adress/adress",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "动态管理",
+					"pathName": "pages/dynamic/dynamic",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商城管理",
+					"pathName": "pages/shop/shop",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收益",
+					"pathName": "pages/earnings/earnings",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布动态",
+					"pathName": "pages/addDynamic/addDynamic"
+				}
+			]
+		}
+	}
+}

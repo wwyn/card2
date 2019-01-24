@@ -1,0 +1,57 @@
+/* pages/adress/adress.wxss */
+.adress {
+  text-align: center;
+  padding: 20rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background-color: rgba(87, 145, 253,.7);
+  font-size: 32rpx;
+}
+.addressList {
+  font-size: 32rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.userInfo {
+  margin-bottom: 20rpx;
+}
+.addAdress {
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+.section {
+  font-size: 30rpx;
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx 0;
+} 
+.section__title {
+  font-size: 30rpx;
+  color: #ccc;
+  padding: 20rpx 0;
+}
+.saveAdress {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background-color: rgba(87, 145, 253,.7);
+  font-size: 32rpx;
+  margin-left:-40rpx;
+  border-radius: none;
+}
+.operation {
+}
+.operation image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+.bt {
+  border-top: 1px solid #ccc;
+}

@@ -1,0 +1,15 @@
+/* pages/behavior/behavior.wxss */
+.radar {
+  text-align: center;
+  font-size: 28rpx;
+}
+.timeList {
+  margin: 20rpx;
+}
+.timeList .time {
+  font-size: 26rpx;
+  color:#ccc;
+}
+.timeList text {
+  color: rgb(11, 95, 252);
+}

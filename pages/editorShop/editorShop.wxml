@@ -1,0 +1,32 @@
+<!--pages/editorShop/editorShop.wxml-->
+<view>
+  <form bindsubmit="formSubmit" class="editor-shop pad">
+    <view class="editor-image" bindtap='uploadImage'>
+      <image src="{{headImg}}"></image>
+      <view>点击上传商城头像，用于商城首页展示</view>
+    </view>
+    <view class="editor-title">| 商城信息</view>
+    <view class="section">
+      <image src="/statics/image/tabbar/we.png"></image>
+      <view class="section__title">商城名称</view>
+      <input name="name" placeholder="15子以内" />
+    </view>
+    <view class="section">
+      <image src="/statics/image/tabbar/we.png"></image>
+      <view class="section__title">商城介绍</view>
+      <textarea name="explain" placeholder="60子以内" auto-height />
+    </view>
+    <view class="section">
+      <image src="/statics/image/tabbar/we.png"></image>
+      <view class="section__title">电话</view>
+      <input name="phone" placeholder="15子以内" />
+    </view>
+    <view class="section">
+      <image src="/statics/image/tabbar/we.png"></image>
+      <view class="section__title">地址</view>
+      <input name="adress" placeholder="点击右侧图标可直接定位" value="{{adress}}"/>
+      <image bindtap='openMap' src="/statics/image/tabbar/location.png"></image>
+    </view>
+    <button class="editor-save" form-type="submit">保存</button>
+  </form>
+</view>

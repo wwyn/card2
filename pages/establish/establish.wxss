@@ -1,0 +1,55 @@
+/* pages/establish/establish.wxss */
+.section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 28rpx;
+}
+.section input {
+  flex: 1;
+  margin-left: 20rpx;
+}
+.section textarea {
+  flex: 1;
+  margin-left: 20rpx;
+}
+.establish-btn {
+  width: 600rpx;
+  color: #fff;
+  background-color:rgb(96, 150, 250); 
+  position: fixed;
+  bottom: 20rpx;
+  left: 50%;
+  margin-left: -300rpx;
+}
+.addText {
+  color: rgb(96, 150, 250); 
+  font-size: 30rpx;
+  border-bottom: 1px solid #ccc;
+}
+.addText text {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 40rpx;
+  background-color: #ccc;
+  color: #fff;
+  text-align: center;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+}
+.cardsList {
+  border-bottom: 1px solid #ccc; 
+}
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 30rpx;
+}
+.cards view:nth-child(2) {
+  color: #ccc;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}

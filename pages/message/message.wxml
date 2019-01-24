@@ -1,0 +1,63 @@
+<!--pages/message/message.wxml-->
+<view class="message">
+   <view class="messageTab">
+    <view bindtap='toggleTab' class="{{ current==index?'active':''}}" data-cur="{{index}}" wx:for="{{ messageTab }}" wx:for-item="item" wx:key="index">
+      {{item}}
+    </view>
+  </view>
+  <view wx:if="{{current==0}}">
+    <view class="messageList pad">
+      <view class="messagebox flex" wx:for="{{ messageList }}" wx:for-item="item" wx:key="index">
+        <image src="http://wx3.sinaimg.cn/large/006qBWBXly1fcgwhjfbjtj30ci08a0ux.jpg"></image>
+        <view>
+          <view class="content flex">
+            <view>{{item.name}}</view>
+            <view class="text">{{item.time}}</view>
+          </view>
+          <view class="text">{{item.text}}</view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{!messageList.length}}" class="data">没有数据</view>
+  </view>
+  <view class="contact pad" wx:if="{{current==1 && !showmyCards}}">
+    <view class="search flex">
+      <image src="/statics/image/tabbar/cat.png"></image>
+      <input placeholder='搜索名片' value='{{searchVal}}' bindblur='searchInput'></input>
+      <view bindtap='delSearch'>x</view>
+    </view>
+    <view class="myCards flex" bindtap='go_myCards'>
+      <image src="/statics/image/tabbar/we.png"></image>
+      <view class="myCards-text">我的名片组</view>
+      <view>></view>
+    </view>
+    <view class="myCard">
+      <view class="myCard-title">我的名片</view>
+      <view class="message-ard flex">
+        <image src="http://wx3.sinaimg.cn/large/006qBWBXly1fcgwhjfbjtj30ci08a0ux.jpg"></image>
+        <view>
+          <view>昵称</view>
+          <view class="text">职位</view>
+          <view class="text">电话</view>
+        </view>
+      </view>
+    </view>
+    <view class="myCard" wx:for="{{ messageCard }}" wx:for-item="item" wx:key="index">
+      <view class="myCard-title">{{item.type}}</view>
+      <view class="message-ard flex" wx:for="{{ item.children }}" wx:for-item="item" wx:key="index">
+        <image src="http://wx3.sinaimg.cn/large/006qBWBXly1fcgwhjfbjtj30ci08a0ux.jpg"></image>
+        <view>
+          <view>{{item.name}}</view>
+          <view class="text">{{item.job}}</view>
+          <view class="text">{{item.phone}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="card-grouping" wx:if="{{current==1 && showmyCards}}">
+    <view class="card-grouping-none">
+      <view>还没有创建名片分组</view>
+      <view bindtap='card_establish'>创建名片组</view>
+    </view>
+  </view>
+</view>
